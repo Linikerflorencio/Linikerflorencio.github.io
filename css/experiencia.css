@@ -1,0 +1,120 @@
+.exp {
+  max-width: 1200px;
+  padding: 20px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  border-radius: 6px;
+}
+
+.exp-titulo {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: #4fc8ae;
+  text-align: center;
+}
+
+.empresa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  background: linear-gradient(#000, #000f0c);
+  border: solid #4fc8ae 1px;
+  border-radius: 6px;
+  gap: 10px 20px;
+}
+
+.empresa-skills li:hover {
+  background: linear-gradient(#125345, #4fc8ae);
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.empresa::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 30px;
+  background: linear-gradient(#4fc8ae, #0f8f73);
+  position: absolute;
+  top: 15px;
+  left: -15px;
+}
+
+.empresa-ano {
+  position: absolute;
+  top: 20px;
+  left: -70px;
+  color: #8b9492;
+  width: 50px;
+  text-align: right;
+}
+
+.empresa-titulo {
+  font-size: 1.3rem;
+  line-height: 1.1;
+}
+
+.empresa-cargo {
+  font-size: 1.2rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.empresa-texto {
+  font-size: 0.875rem;
+  color: #d4d6d6;
+  line-height: 1.4;
+  margin-top: 10px;
+}
+
+.empresa-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+
+.empresa-skills li {
+  font-size: 0.875rem;
+  line-height: 1;
+  margin-top: 10px;
+  font-weight: 700;
+  color: #141414;
+  background: linear-gradient(#4fc8ae, #057960);
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.meli {
+  max-width: 1200px;
+  padding: 20px 200px;
+  margin: 0 auto;
+  gap: 100px;
+  background: #141414;
+  border-radius: 6px;
+}
+
+@media (max-width: 800px) {
+  .exp {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 20px 20px;
+  }
+  .exp-titulo {
+    font-size: 1.5rem;
+    text-align: justify;
+  }
+  .empresa-ano {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+  .empresa-ano::before {
+    content: "Ano: ";
+  }
+}

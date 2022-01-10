@@ -1,0 +1,24 @@
+body {
+  font-family: "Fira Sans";
+  margin: 0px;
+  padding: 0px;
+  color: #ececec;
+  background: linear-gradient(90deg, #0f0f0f, #001410);
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
